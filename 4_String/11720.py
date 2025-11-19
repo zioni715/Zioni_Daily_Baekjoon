@@ -14,6 +14,8 @@
 # sum_numbers = sum(numbers)
 # print(sum_numbers)
 
+#=================================
+
 # M = int(input())
 
 # numbers = list(map(int, input())) # map()은 리스트의 모든 원소에 대해 특정한 함수를 적용할 때 사용하는 함수 
@@ -21,4 +23,13 @@
 # sum_numbers = sum(numbers)
 # print(sum_numbers)
 
+#  =================================
 
+N = input() # 숫자의 개수는 필요 없으므로 변수에 저장하지 않음
+numbers = input() # 숫자들을 문자열로 입력 받음
+total = 0 # 합계를 저장할 변수 초기화
+
+for i in numbers: # 문자열의 각 문자에 대해 반복
+  total += int(i) # 문자를 정수로 변환하여 합계에 더함
+
+print(total)
