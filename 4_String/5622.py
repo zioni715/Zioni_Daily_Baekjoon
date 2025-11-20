@@ -57,10 +57,4 @@ for char in S: 는 S에 들어있는 문자열을 한 글자씩 꺼내서 반복
   for i in range(len(arr)): 는 arr 리스트의 인덱스를 0부터 7까지 반복
     if char in arr[i]: 는 char가 arr 리스트의 i번째 문자열에 포함되어 있는지 확인
       time += i + 3 는 해당 문자가 속한 그룹의 인덱스 i에 3을 더한 값을 time에 누적하는 역할을 한다.
-
-
-
-
-
-
 """
