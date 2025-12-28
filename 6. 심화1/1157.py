@@ -34,20 +34,20 @@ else:
 # 왜 시간초과가 뜨지....?
 # 아 이거 어렵다 진짜!!!!
 
-from collections import Counter
+from collections import Counter # Counter는 문자열/리스트에서 각 요소가 몇 번 나왔는지 세주는 도구
 
 def find_most_frequency_char(word):
   word = word.upper()
-  char_count = Counter(word)
-  max_freq = max(char_count.values())
+  char_count = Counter(word) # word안에 있는 각 문자들의 빈도를 Counter로 세어서 char_count에 저장
+  max_freq = max(char_count.values()) # 가장 큰 빈도를 구해 max_freq에 저장
 
-  most_frequency_char = char_count.most_common()
-  result = [char for char, count in most_frequency_char if count == max_freq]
+  most_frequency_char = char_count.most_common() # most_common()는 빈도 순서대로 (문자, 빈도) 튜플의 리스트를 반환
+  result = [char for char, count in most_frequency_char if count == max_freq] # 리스트 컴프리헨션
 
   if len(result) > 1:
     return "?"
   else:
-    return result[0]
+    return result[0] # result[0]은 유일한 문자
 
 word = input()
 print(find_most_frequency_char(word))
