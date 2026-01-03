@@ -38,7 +38,7 @@ N, K = map(int, input().split())
 print(find_measure(N, K))
 
 
-# -----------------
+# ---------------
 
 def find_measure(N, K):
   cnt = 0
